@@ -1,0 +1,117 @@
+/*
+	Tayfun Erbilen
+	http://erbilen.net
+	erbilen@outlook.com
+*/
+
+/* Reset */
+body {font: 12px Tahoma}
+input, form, select, textarea, table, tr, td, ul, li, a, img, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	list-style: none;
+	text-decoration: none;
+}
+*:focus {outline: 0}
+
+/* Genel */
+#genel {width: 993px; margin: 10px auto; background: url("../images/np_bg.jpg")}
+
+	.np_ust {background: url("../images/np_ust.jpg"); height: 33px}
+	.np_ust p {padding: 12px 15px}
+	
+	/* Kategoriler */
+	.np_kategoriler {background: url("../images/np_kategori_bg.jpg"); height: 20px; width: 968px; margin: 0 auto}
+	.np_kategoriler ul {margin-left: 5px}
+	.np_kategoriler ul li {float: left; padding: 3px 0}
+	.np_kategoriler ul li a {color: #6d6d6d; display: block; padding: 1px 10px; font-size: 11px; border: 1px solid transparent}
+	.np_kategoriler ul li a:hover {background: url("../images/np_kategori_hover.jpg") repeat-x; color: #000; border: 1px solid #7f838e; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px}
+	
+	/* Alt Menü */
+	.np_alt_menu {background: url("../images/np_alt_menu.jpg"); height: 29px; width: 968px; margin: 0 auto}
+	
+	/* Ana Menü */
+	.np_anamenu {background: url("../images/np_anamenu_bg.jpg"); width: 968px; height: 27px; margin: 0 auto}
+	.np_anamenu ul {margin-left: 5px}
+	.np_anamenu ul li {position: relative; bottom: -3px; float: left; position: relative; background: url("../images/menu_bg.jpg")}
+	.np_anamenu ul li a {display: block; text-indent: -9999px; height: 20px}
+	.np_anamenu ul li.m1 {width: 74px; height: 20px}
+	.np_anamenu ul li.m1:hover {background-position: 0 -20px}
+	.np_anamenu ul li.m2 {width: 75px; height: 20px; background-position: -75px 0}
+	.np_anamenu ul li.m2:hover {background-position: -75px -20px}
+	.np_anamenu ul li.m3 {width: 61px; height: 20px; background-position: -149px 0}
+	.np_anamenu ul li.m3:hover {background-position: -149px -20px}
+	.np_anamenu ul li.m4 {width: 64px; height: 20px; background-position: -210px 0}
+	.np_anamenu ul li.m4:hover {background-position: -210px -20px}
+	
+/* İçerik */
+#icerik {padding: 0 0 10px 93px; margin-right: 20px; overflow: auto; position: relative; overflow-x: hidden}
+
+	/* Giriş */
+	.giris {overflow: hidden}
+	.giris a {float: left}
+	.giris ul {float: left; padding-top: 8px}
+	.giris ul li {float: left; padding: 5px}
+	.giris ul li span {float: left; margin-left: 5px; line-height: 25px}
+
+	/* Konu */
+	.konu h4 {font: bold 16px 'Consolas', Georgia; letter-spacing: -1px; background: #e8e8ff; padding: 10px; margin-bottom: 5px; position: relative}
+	.konu h4 a {color: #000; display: block}
+	.konu h4 span {background: url("../images/np_azalt.jpg") no-repeat 0; width: 11px; height: 11px; display: block; position: absolute; top: 14px; left: -20px; cursor: pointer}
+	.konu h4 span.artir {background: url("../images/np_artir.jpg") no-repeat 0}
+	.konu p {font: 13px Georgia; padding: 0 10px 10px 10px}
+	.konu_ic {padding: 25px 10px 30px 30px; font: 13px/19px Georgia; border-left: 1px solid #808080; margin-left: -15px; margin-top: -20px; margin-bottom: -14px}
+	.konu_ic a {color: #f06b02}
+	
+		.konu_ic pre {background: #f6f6f6; padding: 10px; border: 1px solid #ccc; border-top-color: #eee; border-left-color: #eee; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px}
+		.konu_ic pre code {display: block; padding: 0.5em; background: #F9FAFA; border: 1px solid #DCE7E7; overflow: auto; white-space: pre}
+	
+	/* Sayfalama */
+	.sayfalama {padding: 15px; border-top: 1px solid #ddd}
+	.sayfalama ul li {float: left; margin-right: 5px; height: 18px; border: 1px solid #707070; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; background: url("../images/np_sayfalama_a.jpg") repeat-x}
+	.sayfalama ul li a {display: block; text-align: center; height: 18px; line-height: 18px; padding: 0 6px; color: #333}
+	.sayfalama ul li:hover {background: url("../images/np_sayfalama_a_hover.jpg") repeat-x}
+	
+	/* Yorum */
+	.yorum {padding: 10px; border: 1px solid #ddd; margin: 10px; overflow: hidden; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px}
+	.yorumSag {width: 100%; float: right; font: 13px/18px Tahoma}
+	.yorumUst {border-bottom: 1px solid #ddd; padding-bottom: 7px; margin-bottom: 5px}
+	.yorumText {padding-right: 60px}
+	.yorumAvatar {float: right; width: 60px}
+	.yorumAvatar img {width: 60px}
+	
+	/* Yorum Ekle */
+	.yorumEkle {padding: 15px}
+	.yorumEkle ul li {padding-bottom: 10px}
+	.yorumEkle ul li span {display: block; padding-bottom: 5px}
+	input.input {padding: 4px; border: 1px solid #e3e9ef; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-left-color: #e2e3ea; border-top-color: #abadb3; width: 300px}
+	input.input:focus {border-bottom-color: #b7d9ed; border-right-color: #b7d9ed; border-left-color: #b5cfe7; border-top-color: #3d7bad}
+	textarea.textarea {padding: 4px; font: 12px/18px Tahoma; height: 100px; resize: none; overflow: auto; border: 1px solid #e3e9ef; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-left-color: #e2e3ea; border-top-color: #abadb3; width: 500px}
+	textarea.textarea:focus {border-bottom-color: #b7d9ed; border-right-color: #b7d9ed; border-left-color: #b5cfe7; border-top-color: #3d7bad}
+	button {padding: 5px 15px; cursor: pointer}
+	
+	/* Box */
+	#box {background: url("../images/boxBg.jpg"); width: 567px; height: 336px; position: absolute; top: 50px; left: 210px; z-index: 5; display: none; box-shadow: 0 0 15px #333; -moz-box-shadow: 0 0 15px #333; -webkit-box-shadow: 0 0 15px #333}
+	.box_title h6 {padding: 5px 7px; font-size: 12px; font-weight: normal}
+	.box_title span {float: right; width: 30px; height: 25px; cursor: pointer}
+	.box_list {padding: 5px 15px}
+	.box_list ul li {border-bottom: 1px solid #ddd}
+	.box_list ul li a {display: block; padding: 7px 0; line-height: 17px; color: #333}
+	.box_list ul li a img {float: left; margin-right: 10px; width: 33px; height: 33px}
+	
+		.yorumIkon {position: absolute; top: 5px; left: 27px}
+		.yorumIkon img {width: 50px}
+	
+/* Footer */
+.np_alt {background: url("../images/np_alt.jpg"); height: 51px; width: 1007px; margin-left: -6px; position: relative}
+	
+	/* Copyright */
+	.np_alt p.copyright {position: absolute; left: 25px; top: 9px; font-size: 12px}
+	.np_alt p.copyright a {color: #000}
+	.np_alt p.copyright a span {color: #96784c}
+	
+	/* İstatistik */
+	p.konu {position: absolute; top: 9px; left: 280px}
+	p.uye {position: absolute; top: 9px; left: 480px}
